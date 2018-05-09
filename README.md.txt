@@ -1,0 +1,1 @@
+List of configuration properties for Microservice Config Server
