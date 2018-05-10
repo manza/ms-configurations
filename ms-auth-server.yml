@@ -42,9 +42,9 @@ spring:
     data: classpath:/sql/data.sql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    generate-ddl: true
+    generate-ddl: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     show-sql: true
   h2:
     console:
