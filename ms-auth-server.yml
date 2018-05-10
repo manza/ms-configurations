@@ -16,11 +16,17 @@ eureka:
 security:
   oauth2:
     client:
+      # time in seconds when the token expires
       access-token-validity-seconds: 1800
+      # type of authorization: will provide password and will refresh already existing token
       authorized-grant-types: password,refresh_token
+      # unique id that will used by clients
       client-id: coderef
+      # kind of password that will be used along with client-id in order to do authentication to obtain token
       client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
+      # identification of resouces server. if specified here must be especified in the Resources server too
       resource-ids: resources
+      # client rights
       scope: read,write
       
 spring:
@@ -30,8 +36,10 @@ spring:
       username: sa
       password: sa
       driver-class-name: org.h2.Driver
-      data: classpath:/sql/data.sql
+      # sql file with all the database structure. As they are part of Spring, this is not created automatically
       schema: classpath:/sql/schema.sql
+      # sql file that will be automatically executed after application initialization
+      data: classpath:/sql/data.sql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     generate-ddl: false
