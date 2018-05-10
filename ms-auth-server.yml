@@ -36,7 +36,6 @@ spring:
     username: sa
     password:
     driver-class-name: org.h2.Driver
-    initialization-mode: always
     # sql file with all the database structure. As they are part of Spring, this is not created automatically
     schema: classpath:/sql/schema.sql
     # sql file that will be automatically executed after application initialization
