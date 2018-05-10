@@ -32,14 +32,14 @@ security:
 spring:
   datasource:
     url: jdbc:h2:mem:oauth;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-      platform: h2
-      username: sa
-      password: sa
-      driver-class-name: org.h2.Driver
-      # sql file with all the database structure. As they are part of Spring, this is not created automatically
-      schema: classpath:/sql/schema.sql
-      # sql file that will be automatically executed after application initialization
-      data: classpath:/sql/data.sql
+    platform: h2
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+    # sql file with all the database structure. As they are part of Spring, this is not created automatically
+    schema: classpath:/sql/schema.sql
+    # sql file that will be automatically executed after application initialization
+    data: classpath:/sql/data.sql
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     generate-ddl: false
