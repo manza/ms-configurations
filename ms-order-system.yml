@@ -18,8 +18,8 @@ authServer:
     
 security:
   oauth2:
-    reource:
-      # TBD
+    resource:
+      # URI that will be used to validate the token received during the request
       userInfoUri: ${authserver.hostname}/user
 
 spring:

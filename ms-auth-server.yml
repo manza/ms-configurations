@@ -24,7 +24,7 @@ security:
       client-id: coderef
       # kind of password that will be used along with client-id in order to do authentication to obtain token
       client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
-      # identification of resouces server. if specified here must be especified in the Resources server too
+      # identification of resources server. if specified here must be especified in the Resources server too
       resource-ids: resources
       # client rights
       scope: read,write
