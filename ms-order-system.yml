@@ -16,11 +16,11 @@ eureka:
 authServer:
   hostname: http://localhost:9092
     
-security:
-  oauth2:
-    resource:
+#security:
+#  oauth2:
+#    resource:
       # URI that will be used to validate the token received during the request
-      userInfoUri: ${authServer.hostname}/user
+#      userInfoUri: ${authServer.hostname}/user
 
 spring:
   datasource:
